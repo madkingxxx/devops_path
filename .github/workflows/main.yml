@@ -1,0 +1,12 @@
+name: Pika pika!?
+on:
+  [push]
+  branches:
+    - master
+  jobs:
+    - task1
+    - task2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "niggers?!"
+    
