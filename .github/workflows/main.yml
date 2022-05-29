@@ -35,7 +35,6 @@ jobs:
       YEAR: 2077
       MONTH: january
       DAY__OF_THE_MONTH: 44
-      FAVORITE_DAY_OF_WEEK: weekend
     steps:
     - name: Print system date and time
       run: date
