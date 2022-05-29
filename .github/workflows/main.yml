@@ -1,9 +1,22 @@
-name: GitHub Actions Demo
-on: 
+# name: GitHub Actions Demo
+# on: 
+#   push:
+#     branches: [dev]
+# jobs:
+#   task1:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: 
+name: Go
+on:
   push:
-    branches: [dev]
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
 jobs:
-  task1:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "WOW CODE IS RUNNING"
+    - uses: actions/checkout@v3
+    - name: Show all folders
+      run: ls -R
