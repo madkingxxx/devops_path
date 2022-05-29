@@ -16,7 +16,7 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     env:
-      DEPLOY_VER: Gulag #nigger?
+      DEPLOY_VER: Gulag
       YEAR: 2077
       MONTH: january
       DAY__OF_THE_MONTH: 44
