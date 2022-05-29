@@ -4,4 +4,4 @@ jobs:
   task1:
     runs-on: ubuntu-latest
     steps:
-      - run: cd ${GITHUB_WORKSPACE} && echo "ls -R"
+      - run: ls -R ${GITHUB_WORKSPACE}
