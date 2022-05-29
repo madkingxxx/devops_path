@@ -16,7 +16,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DEPLOY_VER: Gulag #nigger?
+      YEAR: 2077
     steps:
     - uses: actions/checkout@v3
     - name: Show all folders
       run: ls -R
+    - name: Print content of log.txt
+      run: cat log.txt
+    - name: Print Github variables
+      run: echo "Hello from ${DEPLOY_VER}"
