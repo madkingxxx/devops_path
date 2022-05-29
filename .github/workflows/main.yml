@@ -1,8 +1,7 @@
-name: Pika pika!?
+name: GitHub Actions Demo
 on: [push]
 jobs:
-  - task1
-  - task2
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo "niggers?!"
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
